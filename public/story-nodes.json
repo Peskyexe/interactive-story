@@ -1,0 +1,74 @@
+{
+    "start": "scene_bedroom",
+    "player_name": "You",
+    "player_img_src": "assets/npcs/unknown-head-icon.png",
+    "nodes": {
+        "scene_bedroom": {
+            "type": "scene",
+            "scene": "bedroom",
+            "next": "dialogue_1"
+        },
+
+        "dialogue_1": {
+            "type": "dialogue",
+            "speaker": "???",
+            "speaker_img_src": "assets/npcs/unknown-head-icon.png",
+            "text": "The princess has been captured by <strong>The Corrupt Mage</strong>!!",
+            "next": "dialogue_2"
+        },
+
+        "dialogue_2": {
+            "type": "dialogue",
+            "speaker": "???",
+            "speaker_img_src": "assets/npcs/unknown-head-icon.png",
+            "text": "Knight, you must do something!",
+            "next": "choice_1"
+        },
+
+        "choice_1": {
+            "type": "choice",
+            "options": [
+                {
+                    "text": "Of course, I will leave at once!",
+                    "next": "scene_armory"
+                },
+                {
+                    "text": "Who's the princess?",
+                    "next": "dialogue_3a"
+                },
+                {
+                    "text": "Who's the Corrupt Mage?",
+                    "next": "sdialogue_3b"
+                }
+            ]
+        },
+
+        "dialogue_3a": {
+            "type": "dialogue",
+            "speaker": "???",
+            "speaker_img_src": "assets/npcs/unknown-head-icon.png",
+            "text": "You imbecile! You don't know the very princess your supposed to protect?!?",
+            "next": "scene_streets_1"
+        },
+
+        "dialogue_3b": {
+            "type": "dialogue",
+            "speaker": "???",
+            "speaker_img_src": "assets/npcs/unknown-head-icon.png",
+            "text": "You imbecile! You don't know your very own brother?!?",
+            "next": "scene_streets_1"
+        },
+
+        "scene_armory": {
+            "type": "scene",
+            "scene": "royal_armory",
+            "next": "dialogue_1"
+        },
+
+        "scene_streets_1": {
+            "type": "scene",
+            "scene": "burning_streets_1", 
+            "next": "dialogue_1"
+        }
+    }
+}

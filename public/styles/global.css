@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap');
+
+:root {
+    --hue-main: 62;
+    --hue-dark: calc(var(--hue-main) - 5);
+    --hue-light: calc(var(--hue-main) + 5);
+
+    --body-bg: oklch(0.15 0.01 var(--hue-dark));
+
+    --ui-bg-dark: oklch(0.2 0.018 var(--hue-dark));
+    --ui-bg: oklch(0.22 0.018 var(--hue-light));
+    --ui-bg-light: oklch(0.23 0.016 var(--hue-light));
+
+    --ui-border: oklch(0.24 0.018 var(--hue-light));
+    --ui-border-light: oklch(0.26 0.016 var(--hue-light));
+
+    --text-strong: oklch(1 0.01 var(--hue-light));
+    --text: oklch(0.98 0.01 var(--hue-light));
+    --text-muted: oklch(0.8 0.01 var(--hue-light));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-1 { grid-area: area-1; }
+.grid-2 { grid-area: area-2; }
+.grid-3 { grid-area: area-3; }
+.grid-4 { grid-area: area-4; }
+
+
+::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+    height: 6px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: oklch(0.3 0.02 70);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: oklch(0.45 0.025 70); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.55 0.03 70); 
+}
